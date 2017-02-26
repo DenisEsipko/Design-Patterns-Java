@@ -1,4 +1,4 @@
-# Sorting-Algorithms-Java
+# Design Patterns (Java)
 
 
 ## License
