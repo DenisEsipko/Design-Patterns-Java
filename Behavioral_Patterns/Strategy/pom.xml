@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>com.code2bits.designpatterns</groupId>
-  <artifactId>Design-Patterns-Java</artifactId>
+  <artifactId>strategy_pattern</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   
-  <name>Design-Patterns-Java</name>
+  <name>Strategy Pattern</name>
   <url>http://www.code2bits.com</url>
 
     <dependencies>
