@@ -2,16 +2,16 @@
 
 ## Behavioral Patterns
 * [Chain Of Responsibility Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Chain%20Of%20Responsibility) [:earth_africa:](http://en.wikipedia.org/wiki/Chain_of_responsibility_pattern)
-* Command Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Command_pattern)
-* Interpreter Pattern [:earth_africa:](https://en.wikipedia.org/wiki/Interpreter_pattern)
-* Iterator Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Iterator_pattern)
-* Mediator Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Mediator_pattern)
-* Memento Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Memento_pattern)
-* Observer Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Observer_pattern)
-* State Pattern [:earth_africa:](http://en.wikipedia.org/wiki/State_pattern)
+* [Command Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Command) [:earth_africa:](http://en.wikipedia.org/wiki/Command_pattern)
+* [Interpreter Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Interpreter) [:earth_africa:](https://en.wikipedia.org/wiki/Interpreter_pattern)
+* [Iterator Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Iterator) [:earth_africa:](http://en.wikipedia.org/wiki/Iterator_pattern)
+* [Mediator Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Mediator) [:earth_africa:](http://en.wikipedia.org/wiki/Mediator_pattern)
+* [Memento Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Memento) [:earth_africa:](http://en.wikipedia.org/wiki/Memento_pattern)
+* [Observer Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Observer) [:earth_africa:](http://en.wikipedia.org/wiki/Observer_pattern)
+* [State Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/State) [:earth_africa:](http://en.wikipedia.org/wiki/State_pattern)
 * [Strategy Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Strategy) [:earth_africa:](http://en.wikipedia.org/wiki/Strategy_pattern)
-* Template Method Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Template_method_pattern)
-* Visitor Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Visitor_pattern)
+* [Template Method Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Template%20Method) [:earth_africa:](http://en.wikipedia.org/wiki/Template_method_pattern)
+* [Visitor Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Visitor) [:earth_africa:](http://en.wikipedia.org/wiki/Visitor_pattern)
 
 
 ## Creational Patterns

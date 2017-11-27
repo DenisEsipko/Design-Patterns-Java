@@ -1,7 +1,7 @@
-# Chain Of Responsibility Pattern
+# Singleton Pattern
 
 ## Structure
-![chain_of_responsibility_pattern](https://raw.githubusercontent.com/Code2Bits/Design-Patterns-Java/master/Behavioral%20Patterns/Chain%20Of%20Responsibility/Images/chain_of_responsibility_pattern.png)
+![singleton_pattern](https://raw.githubusercontent.com/Code2Bits/Design-Patterns-Java/master/Creational%20Patterns/Singleton/Images/singleton_pattern.png)
 
 ## Reference
 * Freeman, Eric, and Elisabeth Robson. Head First Design Patterns: a Brain-Friendly Guide. O'Reilly, Edition: 10th Anniversary Ed., 2014.
