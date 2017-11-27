@@ -3,7 +3,7 @@
 ## Behavioral Patterns
 * Chain Of Responsibilities Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Chain_of_responsibility_pattern)
 * Command Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Command_pattern)
-* Interpreter Pattern [:earth_africa:] (https://en.wikipedia.org/wiki/Interpreter_pattern)
+* Interpreter Pattern [:earth_africa:](https://en.wikipedia.org/wiki/Interpreter_pattern)
 * Iterator Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Iterator_pattern)
 * Mediator Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Mediator_pattern)
 * Memento Pattern [:earth_africa:](http://en.wikipedia.org/wiki/Memento_pattern)
