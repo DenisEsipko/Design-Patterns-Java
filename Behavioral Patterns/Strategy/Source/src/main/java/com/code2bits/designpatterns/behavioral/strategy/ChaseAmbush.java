@@ -25,23 +25,23 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The ChaseAmbush class contains the behavior of a ghost in the Pac-Man game. In chase mode, 
- * the ghost will attempt to ambush pac-man. The ghost tends to take a more wounding way towards
- * pac-man with deadly effect. 
+ * The ChaseAmbush class contains the behaviour of a ghost in the Pac-Man game. In chase mode, 
+ * the ghost will attempt to ambush Pac-Man. The ghost tends to take a more wounding way towards
+ * Pac-Man with deadly effect. 
  * 
  * @author	André Maré
  */
-public class ChaseAmbush implements ChaseBehavior {
+public class ChaseAmbush implements ChaseBehaviour {
 
 	
 	/**
-	 * The chase method implements the ambush behavior of the ghost when the game is in 
+	 * The chase method implements the ambush behaviour of the ghost when the game is in 
 	 * chase mode.
 	 */
 	public void chase() {
 		System.out.println("Chase Mode: Attempt to ambush on a wounding route.");
-	} // method chase
+	} 
 	
 	
-} // class ChaseAmbush
+} 
 

@@ -25,20 +25,20 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The ChaseBehavior interface is used to define different ghostly behaviors during the chase 
- * mode of the PacMan game. In chase mode, the ghosts will have different behaviors associated 
- * with their personalities.
+ * The ScatterBehaviour interface is used to define different ghostly behaviours during the scatter 
+ * mode of the Pac-Man game. In scatter mode, the ghosts give up the chase and head for their 
+ * respective home corners.
  * 
  * @author	André Maré
  */
-public interface ChaseBehavior {
+public interface ScatterBehaviour {
 	
 	
 	/**
-	 * The chase method defines the different behaviors of the ghosts when the game is in 
-	 * chase mode.
+	 * The scatter method defines the different behaviour of the ghost when the game is in 
+	 * scatter mode.
 	 */
-	public void chase();
+	public void scatter();
 	
 	
-} // interface ChaseBehavior
+}

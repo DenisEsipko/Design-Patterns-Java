@@ -25,21 +25,21 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The FrightenedWandering class contains the behavior of a ghost in the Pac-Man game. In frightened
+ * The FrightenedWandering class contains the behaviour of a ghost in the Pac-Man game. In frightened
  * mode, the ghosts will all turn dark blue and aimlessly wander around in the maze for a few seconds.
  * 
  * @author	André Maré
  */
-public class FrightenedWandering implements FrightenedBehavior {
+public class FrightenedWandering implements FrightenedBehaviour {
 
 	
 	/**
-	 * The frightened method implements the "frightened wandering" behavior of the ghost when the game is in 
+	 * The frightened method implements the "frightened wandering" behaviour of the ghost when the game is in 
 	 * frightened mode.
 	 */
 	public void frightened() {
 		System.out.println("Frightened Mode: Turn Blue and Wander Around.");
-	} // method frightened
+	} 
 	
 	
-} // class FrightenedWandering
+} 

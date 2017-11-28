@@ -25,23 +25,23 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The ChasePatrol class contains the behavior of a ghost in the Pac-Man game. In chase mode, 
+ * The ChasePatrol class contains the behaviour of a ghost in the Pac-Man game. In chase mode, 
  * the ghost patrols around his designated block by default, only chasing Pac-Man if he comes 
  * near enough.
  * 
  * @author	André Maré
  */
-public class ChasePatrol implements ChaseBehavior {
+public class ChasePatrol implements ChaseBehaviour {
 
 	
 	/**
-	 * The chase method implements the patrol and chase behavior of the ghost when the game is in 
+	 * The chase method implements the patrol and chase behaviour of the ghost when the game is in 
 	 * chase mode.
 	 */
 	public void chase() {
 		System.out.println("Chase Mode: Patrols around designated block, chase Pac-Man if close enough.");
-	} // method chase
+	}
 	
 	
-} // class ChasePatrol
+}
 

@@ -25,7 +25,7 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The Ghost class contains the different behavior that the different ghosts have in the Pac-Man
+ * The Ghost class contains the different behaviour that the different ghosts have in the Pac-Man
  * game. There are three distinct modes a ghost can be in: chase, scatter and frightened.
  * 
  * @author	André Maré
@@ -34,14 +34,14 @@ public class Ghost {
 
 	
 	public Ghost() {
-	} // no-arguments constructor
+	} 
 	
 	
 	protected String ghostName = "";
 	protected String ghostColour = "";
-	protected ChaseBehavior chaseBehavior;
-	protected ScatterBehavior scatterBehavior;
-	protected FrightenedBehavior frightenedBehavior;
+	protected ChaseBehaviour chaseBehaviour;
+	protected ScatterBehaviour scatterBehaviour;
+	protected FrightenedBehaviour frightenedBehaviour;
 	
 	
 	public void display() {
@@ -52,22 +52,22 @@ public class Ghost {
 		display.append(" ghost.");
 		
 		System.out.println(display.toString());
-	} // method display
+	} 
 	
 	
 	public void executeChaseMode() {
-		chaseBehavior.chase();
-	} // method executeChaseMode
+		chaseBehaviour.chase();
+	} 
 	
 	
 	public void executeScatterMode() {
-		scatterBehavior.scatter();
-	} // method executeScatterMode
+		scatterBehaviour.scatter();
+	} 
 	
 	
 	public void executeFrightenedMode() {
-		frightenedBehavior.frightened();
-	} // method executeFrightenedMode
+		frightenedBehaviour.frightened();
+	} 
 
 
 	public String getGhostName() {
@@ -90,34 +90,34 @@ public class Ghost {
 	}
 
 
-	public ChaseBehavior getChaseBehavior() {
-		return chaseBehavior;
+	public ChaseBehaviour getChaseBehaviour() {
+		return chaseBehaviour;
 	}
 
 
-	public void setChaseBehavior(ChaseBehavior chaseBehavior) {
-		this.chaseBehavior = chaseBehavior;
+	public void setChaseBehaviour(ChaseBehaviour chaseBehaviour) {
+		this.chaseBehaviour = chaseBehaviour;
 	}
 
 
-	public ScatterBehavior getScatterBehavior() {
-		return scatterBehavior;
+	public ScatterBehaviour getScatterBehaviour() {
+		return scatterBehaviour;
 	}
 
 
-	public void setScatterBehavior(ScatterBehavior scatterBehavior) {
-		this.scatterBehavior = scatterBehavior;
+	public void setScatterBehaviour(ScatterBehaviour scatterBehaviour) {
+		this.scatterBehaviour = scatterBehaviour;
 	}
 
 
-	public FrightenedBehavior getFrightenedBehavior() {
-		return frightenedBehavior;
+	public FrightenedBehaviour getFrightenedBehaviour() {
+		return frightenedBehaviour;
 	}
 
 
-	public void setFrightenedBehavior(FrightenedBehavior frightenedBehavior) {
-		this.frightenedBehavior = frightenedBehavior;
+	public void setFrightenedBehaviour(FrightenedBehaviour frightenedBehaviour) {
+		this.frightenedBehaviour = frightenedBehaviour;
 	}
 	
 	
-} // class Ghost
+} 

@@ -25,21 +25,21 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The ChaseRandom class contains the behavior of a ghost in the Pac-Man game. In chase mode, 
+ * The ChaseRandom class contains the behaviour of a ghost in the Pac-Man game. In chase mode, 
  * the ghost will move in a random manner around the board and is not much of a threat.
  * 
  * @author	André Maré
  */
-public class ChaseRandom implements ChaseBehavior {
+public class ChaseRandom implements ChaseBehaviour {
 
 	
 	/**
-	 * The chase method implements the random behavior of the ghost when the game is in 
+	 * The chase method implements the random behaviour of the ghost when the game is in 
 	 * chase mode.
 	 */
 	public void chase() {
 		System.out.println("Chase Mode: Moving in a random manner around the board.");
-	} // method chase
+	}
 	
 	
-} // class ChaseRandom
+} 

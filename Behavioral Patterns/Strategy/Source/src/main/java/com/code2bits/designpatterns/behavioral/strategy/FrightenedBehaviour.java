@@ -25,19 +25,19 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The FrightenedBehavior interface is used to define different ghostly behaviors during the frightened 
+ * The FrightenedBehaviour interface is used to define different ghostly behaviours during the frightened 
  * mode of the Pac-Man game. In frightened mode, the ghosts will all turn dark blue.
  * 
  * @author	André Maré
  */
-public interface FrightenedBehavior {
+public interface FrightenedBehaviour {
 
 	
 	/**
-	 * The frightened method defines the different behaviors of the ghosts when the game is in 
+	 * The frightened method defines the different behaviours of the ghosts when the game is in 
 	 * frightened mode.
 	 */
 	public void frightened();
 	
 	
-} // interface FrightenedBehavior
+}

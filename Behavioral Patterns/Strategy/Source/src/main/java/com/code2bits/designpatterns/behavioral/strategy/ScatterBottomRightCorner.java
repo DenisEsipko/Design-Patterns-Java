@@ -25,22 +25,22 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The ScatterBottomRightCorner class contains the behavior of a ghost in the Pac-Man game. In scatter 
+ * The ScatterBottomRightCorner class contains the behaviour of a ghost in the Pac-Man game. In scatter 
  * mode, the ghost will give up the chase and head for the bottom right corner of the board using 
  * its regular path-finding methods. 
  * 
  * @author	André Maré
  */
-public class ScatterBottomRightCorner implements ScatterBehavior {
+public class ScatterBottomRightCorner implements ScatterBehaviour {
 	
 	
 	/**
-	 * The scatter method implements the move to bottom right corner behavior of the ghost when the 
+	 * The scatter method implements the move to bottom right corner behaviour of the ghost when the 
 	 * game is in scatter mode.
 	 */
 	public void scatter() {
 		System.out.println("Scatter Mode: Move to Bottom Right Corner.");
-	} // method scatter
+	} 
 	
 	
-} // class ScatterBottomRightCorner
+} 

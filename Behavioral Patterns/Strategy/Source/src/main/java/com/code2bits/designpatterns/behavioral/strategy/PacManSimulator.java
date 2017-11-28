@@ -35,78 +35,78 @@ public class PacManSimulator {
 	
 	/**
 	 * The createGhostBlinky method creates a Ghost object with the properties 
-	 * and behavior of Blinky the red ghost.
+	 * and behaviour of Blinky the red ghost.
 	 * 
 	 * @return 	Ghost object representing Blinky the red ghost.
 	 */
 	public Ghost createGhostBlinky() {
-		Ghost blinky = new Ghost();
-		blinky.setGhostName("Blinky");
-		blinky.setGhostColour("red");
+		Ghost ghost1 = new Ghost();
+		ghost1.setGhostName("Blinky");
+		ghost1.setGhostColour("red");
 		
-		blinky.setChaseBehavior(new ChaseAggresive());
-		blinky.setScatterBehavior(new ScatterTopRightCorner());
-		blinky.setFrightenedBehavior(new FrightenedWandering());
+		ghost1.setChaseBehaviour(new ChaseAggresive());
+		ghost1.setScatterBehaviour(new ScatterTopRightCorner());
+		ghost1.setFrightenedBehaviour(new FrightenedWandering());
 		
-		return blinky;
-	} // method createGhostBlinky
+		return ghost1;
+	} 
 
 	
 	/**
 	 * The createGhostPinky method creates a Ghost object with the properties 
-	 * and behavior of Pinky the pink ghost.
+	 * and behaviour of Pinky the pink ghost.
 	 * 
 	 * @return 	Ghost object representing Pinky the red ghost.
 	 */
 	public Ghost createGhostPinky() {
-		Ghost blinky = new Ghost();
-		blinky.setGhostName("Pinky");
-		blinky.setGhostColour("pink");
+		Ghost ghost2 = new Ghost();
+		ghost2.setGhostName("Pinky");
+		ghost2.setGhostColour("pink");
 		
-		blinky.setChaseBehavior(new ChaseAmbush());
-		blinky.setScatterBehavior(new ScatterTopLeftCorner());
-		blinky.setFrightenedBehavior(new FrightenedWandering());
+		ghost2.setChaseBehaviour(new ChaseAmbush());
+		ghost2.setScatterBehaviour(new ScatterTopLeftCorner());
+		ghost2.setFrightenedBehaviour(new FrightenedWandering());
 		
-		return blinky;
-	} // method createGhostPinky
+		return ghost2;
+	} 
 	
 	
 	/**
 	 * The createGhostInky method creates a Ghost object with the properties 
-	 * and behavior of Inky the cyan.
+	 * and behaviour of Inky the cyan.
 	 * 
 	 * @return 	Ghost object representing Inky the cyan ghost.
 	 */
 	public Ghost createGhostInky() {
-		Ghost blinky = new Ghost();
-		blinky.setGhostName("Inky");
-		blinky.setGhostColour("cyan");
+		Ghost ghost3 = new Ghost();
+		ghost3.setGhostName("Inky");
+		ghost3.setGhostColour("cyan");
 		
-		blinky.setChaseBehavior(new ChasePatrol());
-		blinky.setScatterBehavior(new ScatterBottomRightCorner());
-		blinky.setFrightenedBehavior(new FrightenedWandering());
+		ghost3.setChaseBehaviour(new ChasePatrol());
+		ghost3.setScatterBehaviour(new ScatterBottomRightCorner());
+		ghost3.setFrightenedBehaviour(new FrightenedWandering());
 		
-		return blinky;
-	} // method createGhostInky
+		return ghost3;
+	}
 	
 	
 	/**
 	 * The createGhostClyde method creates a Ghost object with the properties 
-	 * and behavior of Clyde the orange.
+	 * and behaviour of Clyde the orange.
 	 * 
 	 * @return 	Ghost object representing Clyde the orange ghost.
 	 */
 	public Ghost createGhostClyde() {
-		Ghost blinky = new Ghost();
-		blinky.setGhostName("Clyde");
-		blinky.setGhostColour("orange");
+		Ghost ghost4 = new Ghost();
+		ghost4.setGhostName("Clyde");
+		ghost4.setGhostColour("orange");
 		
-		blinky.setChaseBehavior(new ChaseRandom());
-		blinky.setScatterBehavior(new ScatterBottomLeftCorner());
-		blinky.setFrightenedBehavior(new FrightenedWandering());
+		ghost4.setChaseBehaviour(new ChaseRandom());
+		ghost4.setScatterBehaviour(new ScatterBottomLeftCorner());
+		ghost4.setFrightenedBehaviour(new FrightenedWandering());
 		
-		return blinky;
-	} // method createGhostClyde
+		return ghost4;
+	} 
 	
 	
 	public static void main(String[] args) {
@@ -139,7 +139,7 @@ public class PacManSimulator {
 		clyde.executeScatterMode();
 		clyde.executeFrightenedMode();
 		System.out.println("\n");
-	} // main method
+	}
 	
 	
-} // class PacManSimulator
+} 
