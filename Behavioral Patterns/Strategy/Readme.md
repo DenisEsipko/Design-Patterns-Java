@@ -6,7 +6,6 @@
 ## Structure
 ![strategy_pattern](https://raw.githubusercontent.com/Code2Bits/Design-Patterns-Java/master/Behavioral%20Patterns/Strategy/Images/strategy_pattern.png)
 
-
 ## Notes
 * The strategy pattern takes the behaviour that varies and encapsulates it into a seperate class. This enables you to make changes to the parts that vary without impacting the parts that stays the same.
 * The parts of a class that varies should be pulled from the class and placed into seperate classes that represent that specific behaviour.
@@ -15,6 +14,10 @@
 * An abstract class can be used to represent each behaviour and the different implementation of that specific behaviour should then extend from the abstract class.
 * The HAS-A relationship between classes forms part of composition.
 * Favour composition over inheritance.
+
+## Example
+The Pac-Man Patterns: Ghost Movement is an example of the Strategy Pattern. For the full article, please follow the link:
+* [Pac-Man Patterns: Ghost Movement](Pac-Man_Patterns-Ghost_Movement.md)
 
 ## Reference
 * Freeman, Eric, and Elisabeth Robson. Head First Design Patterns: a Brain-Friendly Guide. O'Reilly, Edition: 10th Anniversary Ed., 2014.
