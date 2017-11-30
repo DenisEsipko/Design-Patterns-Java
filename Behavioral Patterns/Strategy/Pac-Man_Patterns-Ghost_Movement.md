@@ -2,22 +2,30 @@
 
 ## Pac-Man Ghost Movement
 ### Introduction
-Pac-Man is an arcade game that was first release in 1980. The player controls Pac-Man through a maze and has to collect all the dots (Pac-Dots) in order to complete the stage. Pac-Man is being chased by four ghosts in the game whose main objective is to kill him. The four ghosts, Blinky, Pinky, Inky and Clyde, each has different behaviour depending on the mode of the ghosts. The ghosts change mode during game play from scattering to the corners of the maze, to chasing Pac-Man and also to being frightened when Pac-Man picks up a Power-Pellet.
+Pac-Man is an arcade game that was first release in 1980. The player navigates Pac-Man through a maze and has to collect all the dots (Pac-Dots) in order to complete the stage. Pac-Man is being chased by four ghosts in the game whose main objective is to kill him. The four ghosts, Blinky, Pinky, Inky and Clyde, each has different behaviour depending on the mode of the ghosts. The ghosts change mode during game play from scattering to the corners of the maze, to chasing Pac-Man and also to being frightened when Pac-Man picks up a Power-Pellet.
 
-This article discusses the different movements and behaviour of the ghosts in Pac-Man and how it related to implementing Reusable Object-Oriented software also known as Design Patterns.
+![Pac-Man Ghosts](https://thepracticaldev.s3.amazonaws.com/i/ir34qzitet0r046j30yd.jpg)
+
+This article discusses the different movements and behaviour of the ghosts in Pac-Man and how it relates to implementing Reusable Object-Oriented software also known as Design Patterns.
 
 
 **Chase**
 
 In "Chase" mode, the ghosts are trying to find and capture Pac-Man. Each of the four ghosts has a unique behaviour while chasing Pac-Man. Blinky the red ghost is very aggressive in its approach while chasing Pac-Man and will follow Pac-Man once located. Pinky the pink ghost will attempt to ambush Pac-Man by trying to get in front of him and cut him off. Inky the cyan ghost will patrol an area and is not very predictable in this mode. Clyde the orange ghost is moving in a random fashion and seems to stay out of the way of Pac-Man.
 
+![Pac-Man Chase Mode](https://thepracticaldev.s3.amazonaws.com/i/1qsqzxu2wo2s3qh8o22g.png)
+
 **Scatter**
 
 In "Scatter" mode, the ghosts will stop chasing Pac-Man and each will move into its respective corners for a few seconds. Blinky the red ghost moves towards the top right corner, while Pink the pink ghost moves towards the top left corner. Inky the cyan ghost moves towards the bottom left corner and Clyde the orange ghost moves towards the bottom left corner. This mode lasts only for a few seconds and then changes back to the "Chase" mode.
 
+![Pac-Man Chase Mode](https://thepracticaldev.s3.amazonaws.com/i/ckhlss1vkklsuw1dq282.png)
+
 **Frightened**
 
 The "Frightened" mode occurs when Pac-Man eats an energizer within the maze. There are four energizers located in the maze and all four ghosts change mode. The ghosts turn dark blue and wander around in the maze being vulnerable. They will flash moments before they return to either the Scatter or Chase mode. 
+
+![Pac-Man Chase Mode](https://thepracticaldev.s3.amazonaws.com/i/ejfezcehev86cd7mw82a.png)
 
 So, to sum up the movement requirements of the ghosts, the following table illustrates the types of movement and also how the individual ghosts behave during those types of movement.
 
@@ -83,4 +91,3 @@ The following diagram illustrates the composition and implementation of the Ghos
 The Strategy Pattern assists with the design of the different behaviours of the ghosts in Pac-Man. Applying the Strategy Pattern to the ghost movement design, the solution become reusable, extensible, maintainable and allows for change without major impact to the rest of the code. 
 
 I hope this article rekindled your memories of the good days of playing Pac-Man and also implementing Reusable Object-Oriented software, also known as Design Patterns.
-
