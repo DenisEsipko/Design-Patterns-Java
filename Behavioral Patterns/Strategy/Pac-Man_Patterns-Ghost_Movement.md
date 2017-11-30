@@ -36,7 +36,7 @@ The Ghost class has a ChaseBehaviour, ScatterBehaviour and a FrightenedBehaviour
 
 
 ### Chase Behaviour: Strategy Pattern
-The Chase behaviour of the ghosts varies, and the implementation of each of the parts are removed into a seperate class. Hence, the algorithm to chase aggressively, ambush, patrol and random is placed in seperate classes. An interface (ChaseBehaviour) is created to allow for the composition between the Ghost class and the different implementations of the the Chase behaviour. 
+The chase behaviour of the ghosts vary, and the implementation of each of the parts are removed into a seperate class. Hence, the algorithm to chase aggressively, ambush, patrol and random is placed in seperate classes. An interface (ChaseBehaviour) is created to allow for the composition between the Ghost class and the different implementations of the the Chase behaviour. 
 
 The following diagram illustrates the composition and implementation of the Ghost class and the different implementations of the ChaseBahaviour:
 
@@ -51,9 +51,31 @@ The following diagram illustrates the composition and implementation of the Ghos
 
 
 ### Scatter Behaviour: Strategy Pattern
+The scatter behaviour of the ghosts vary, and the implementation of each of the parts are removed into a seperate class. Hence, the algorithm to scatter to the top-left, top-right, bottom-left and bottom right corners is placed in seperate classes. An interface (ScatterBehaviour) is created to allow for the composition between the Ghost class and the different implementations of the the Scatter behaviour. 
+
+The following diagram illustrates the composition and implementation of the Ghost class and the different implementations of the ScatterBahaviour:
 
 ![strategy_pattern_scatter_behaviour](https://raw.githubusercontent.com/Code2Bits/Design-Patterns-Java/master/Behavioral%20Patterns/Strategy/Images/strategy_pattern_scatter_behaviour.png)
 
+* [Ghost](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/Ghost.java) - The Ghost class contains the different behaviour that the different ghosts have in the Pac-Man game. There are three distinct modes a ghost can be in: chase, scatter and frightened.
+* [ScatterBehaviour](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ScatterBehaviour.java) - The ScatterBehaviour interface is used to define different ghostly behaviours during the scatter mode of the Pac-Man game. In scatter mode, the ghosts give up the chase and head for their respective home corners.
+* [ScatterTopLeftCorner](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ScatterTopLeftCorner.java) - The ScatterTopLeftCorner class contains the behaviour of a ghost in the Pac-Man game. In scatter mode, the ghost will give up the chase and head for the top left corner of the board using its regular path-finding methods. 
+* [ScatterTopRightCorner](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ScatterTopRightCorner.java) - The ScatterTopRightCorner class contains the behaviour of a ghost in the Pac-Man game. In scatter mode, the ghost will give up the chase and head for the top right corner of the board using its regular path-finding methods.
+* [ScatterBottomLeftCorner](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ScatterBottomLeftCorner.java) - The ScatterBottomLeftCorner class contains the behaviour of a ghost in the Pac-Man game. In scatter mode, the ghost will give up the chase and head for the bottom left corner of the board using its regular path-finding methods. 
+* [ScatterBottomRightCorner](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ScatterBottomRightCorner.java) - The ScatterBottomRightCorner class contains the behaviour of a ghost in the Pac-Man game. In scatter mode, the ghost will give up the chase and head for the bottom right corner of the board using its regular path-finding methods. 
+
+
 ### Frightened Behaviour: Strategy Pattern
+The frightened behaviour of the ghosts may does not vary, however the implementation of is still removed into a seperate class. Hence, the algorithm to wander around is placed in seperate class. An interface (FrightenedBehaviour) is created to allow for the composition between the Ghost class and the implementation of the the Wandering behaviour. 
+
+The following diagram illustrates the composition and implementation of the Ghost class and the different implementations of the FrightenedBehaviour:
 
 ![strategy_pattern_frightened_behaviour](https://raw.githubusercontent.com/Code2Bits/Design-Patterns-Java/master/Behavioral%20Patterns/Strategy/Images/strategy_pattern_frightened_behaviour.png)
+
+* [Ghost](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/Ghost.java) - The Ghost class contains the different behaviour that the different ghosts have in the Pac-Man game. There are three distinct modes a ghost can be in: chase, scatter and frightened.
+* [FrightenedBehaviour](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/FrightenedBehaviour.java) - The FrightenedBehaviour interface is used to define different ghostly behaviours during the frightened mode of the Pac-Man game. In frightened mode, the ghosts will all turn dark blue.
+* [FrightenedWandering](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/FrightenedWandering.java) - The FrightenedWandering class contains the behaviour of a ghost in the Pac-Man game. In frightened mode, the ghosts will all turn dark blue and aimlessly wander around in the maze for a few seconds.
+
+## Conclusion
+
+
