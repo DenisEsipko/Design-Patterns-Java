@@ -44,7 +44,7 @@ public class PacManSimulator {
 		ghost1.setGhostName("Blinky");
 		ghost1.setGhostColour("red");
 		
-		ghost1.setChaseBehaviour(new ChaseAggresive());
+		ghost1.setChaseBehaviour(new ChaseAggressive());
 		ghost1.setScatterBehaviour(new ScatterTopRightCorner());
 		ghost1.setFrightenedBehaviour(new FrightenedWandering());
 		

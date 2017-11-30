@@ -23,7 +23,7 @@ So, to sum up the movement requirements of the ghosts, the following table illus
 
 | Ghost Name | Chase | Scatter | Frightened |
 | --- | --- | --- | --- |
-| Blinky (Red) | Agressive | Top Right Corner | Wandering |
+| Blinky (Red) | Aggressive | Top Right Corner | Wandering |
 | Pinky (Pink) | Ambush | Top Left Corner | Wandering |
 | Inky (Cyan) | Patrol | Bottom Right Corner | Wandering |
 | Clyde (Orange) | Random | Bottom Left Corner | Wandering |
@@ -33,7 +33,7 @@ So, to sum up the movement requirements of the ghosts, the following table illus
 
 To implement the different ghost behaviours, the instances of the Ghost class will use the behaviour represented by an interface (ChaseBehaviour, ScatterBehaviour & FrightenedBehaviour) to ensure that the different implementations of each behaviour is not implemented within the Ghost class. 
 
-According to the Strategy Pattern, the behaviour that varies is placed into a seperate class to allow you to make changes to those behaviours without affecting the parts that stays the same. Furthermore, the pattern aligns to the design principle to "Program to an Interface, and not to an Implementation" so that the three modes of a ghost can be defined as interfaces, and the different implementations of the modes of movement can be implemented in separate classes.
+According to the Strategy Pattern, the behaviour that varies is placed into a separate class to allow you to make changes to those behaviours without affecting the parts that stays the same. Furthermore, the pattern aligns to the design principle to "Program to an Interface, and not to an Implementation" so that the three modes of a ghost can be defined as interfaces, and the different implementations of the modes of movement can be implemented in separate classes.
 
 The Ghost class has a ChaseBehaviour, ScatterBehaviour and a FrightenedBehaviour. The HAS-A relationship refers to the composition of the classes. Now it is possible to compose the Ghost class to in such a way that each of the different types of ghosts can be composed of different implementations for each of the 3 modes of movement.
 
@@ -47,7 +47,7 @@ The following diagram illustrates the composition and implementation of the Ghos
 
 * [Ghost](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/Ghost.java) - The Ghost class contains the different behaviour that the different ghosts have in the Pac-Man game. There are three distinct modes a ghost can be in: chase, scatter and frightened.
 * [ChaseBehaviour](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ChaseBehaviour.java) - The ChaseBehaviour interface is used to define different ghostly behaviours during the chase mode of the Pac-Man game. In chase mode, the ghosts will have different behaviours associated with their personalities.
-* [ChaseAggresive](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ChaseAggresive.java) - The ChaseAggresive class contains the behaviour of a ghost in the Pac-Man game. In chase mode, the ghost chases aggressively and will usually take the shortest route to you, and tends to follow.
+* [ChaseAggressive](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ChaseAggressive.java) - The ChaseAggressive class contains the behaviour of a ghost in the Pac-Man game. In chase mode, the ghost chases aggressively and will usually take the shortest route to you, and tends to follow.
 * [ChaseAmbush](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ChaseAmbush.java) - The ChaseAmbush class contains the behaviour of a ghost in the Pac-Man game. In chase mode, the ghost will attempt to ambush Pac-Man. The ghost tends to take a more wounding way towards Pac-Man with deadly effect. 
 * [ChasePatrol](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ChasePatrol.java) - The ChasePatrol class contains the behaviour of a ghost in the Pac-Man game. In chase mode, the ghost patrols around his designated block by default, only chasing Pac-Man if he comes near enough.
 * [ChaseRandom](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/ChaseRandom.java) - The ChaseRandom class contains the behaviour of a ghost in the Pac-Man game. In chase mode, the ghost will move in a random manner around the board and is not much of a threat.

@@ -25,13 +25,13 @@ package com.code2bits.designpatterns.behavioral.strategy;
 
 
 /**
- * The ChaseAggresive class contains the behaviour of a ghost in the Pac-Man game. In chase mode, 
+ * The ChaseAggressive class contains the behaviour of a ghost in the Pac-Man game. In chase mode, 
  * the ghost chases aggressively and will usually take the shortest route to you, and tends to 
  * follow.
  * 
  * @author	André Maré
  */
-public class ChaseAggresive implements ChaseBehaviour {
+public class ChaseAggressive implements ChaseBehaviour {
 
 	
 	/**
