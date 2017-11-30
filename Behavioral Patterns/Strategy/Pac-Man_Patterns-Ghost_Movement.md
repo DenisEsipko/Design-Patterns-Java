@@ -77,5 +77,5 @@ The following diagram illustrates the composition and implementation of the Ghos
 * [FrightenedWandering](https://github.com/Code2Bits/Design-Patterns-Java/blob/master/Behavioral%20Patterns/Strategy/Source/src/main/java/com/code2bits/designpatterns/behavioral/strategy/FrightenedWandering.java) - The FrightenedWandering class contains the behaviour of a ghost in the Pac-Man game. In frightened mode, the ghosts will all turn dark blue and aimlessly wander around in the maze for a few seconds.
 
 ## Conclusion
-
+The Strategy Pattern assists in implementing of the different behaviours the ghosts in Pac-Man have when trying to capture Pac-Man. The ghost movement designs are reusable, extensible and maintainable and allows for change without major impact to the rest of the code. I hope this article rekindled your memories of the good days of playing Pac-Man and also implementing Reusable Object-Oriented software, also known as Design Patterns.
 
