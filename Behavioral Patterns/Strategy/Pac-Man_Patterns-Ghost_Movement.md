@@ -2,7 +2,10 @@
 
 ## Pac-Man Ghost Movement
 ### Introduction
-The objective of the ghosts in Pac-Man is to chase Pac-Man down and capture him within the maze. For this the ghosts has to move around in the maze trying to locate Pac-Man. The ghosts have three different types of movement during play: chase, scatter and frightened.
+Pac-Man is an arcade game that was first release in 1980. The player controls Pac-Man through a maze and has to collect all the dots (Pac-Dots) in order to complete the stage. Pac-Man is being chased by four ghosts in the game whose main objective is to kill him. The four ghosts, Blinky, Pinky, Inky and Clyde, each has different behavior depending on the mode of the ghosts. The ghosts change mode during game play from scattering to the corners of the maze, to chasing Pac-Man and also to being frightened when Pac-Man picks up a Power-Pellet.
+
+This article discusses the different movements and behavior of the ghosts in Pac-Man and how it related to implementing Reusable Object-Oriented software also known as Design Patterns.
+
 
 **Chase**
 
@@ -14,9 +17,9 @@ In "Scatter" mode, the ghosts will stop chasing Pac-Man and each will move into 
 
 **Frightened**
 
-The "Frightened" mode occurs when Pac-Man eats an energizer within the maze. There are four energizers located in the maze and all four ghosts changes mode. The ghosts turn dark blue and wander around in the maze being vulnerable. They will flash moments before they return to either the Scatter or Chase mode. 
+The "Frightened" mode occurs when Pac-Man eats an energizer within the maze. There are four energizers located in the maze and all four ghosts change mode. The ghosts turn dark blue and wander around in the maze being vulnerable. They will flash moments before they return to either the Scatter or Chase mode. 
 
-So to sum up the movement requirements of the ghosts, the following table illustrates the types of movement and also how the individual ghosts behave during those types of movement.
+So, to sum up the movement requirements of the ghosts, the following table illustrates the types of movement and also how the individual ghosts behave during those types of movement.
 
 | Ghost Name | Chase | Scatter | Frightened |
 | --- | --- | --- | --- |
@@ -30,13 +33,13 @@ So to sum up the movement requirements of the ghosts, the following table illust
 
 To implement the different ghost behaviours, the instances of the Ghost class will use the behaviour represented by an interface (ChaseBehaviour, ScatterBehaviour & FrightenedBehaviour) to ensure that the different implementations of each behaviour is not implemented within the Ghost class. 
 
-According to the Strategy Pattern, the bahaviour that varies is placed into a seperate class to allow you to make changes to those behaviours without affecting the parts that stays the same. Furthermore the pattern aligns to the design principle to "Program to an Interface, and not to an Implementation" so that the three modes of a ghost can be defined as interfaces, and the different implementations of the modes of movement can be implemented in seperate classes.
+According to the Strategy Pattern, the behaviour that varies is placed into a seperate class to allow you to make changes to those behaviours without affecting the parts that stays the same. Furthermore, the pattern aligns to the design principle to "Program to an Interface, and not to an Implementation" so that the three modes of a ghost can be defined as interfaces, and the different implementations of the modes of movement can be implemented in separate classes.
 
-The Ghost class has a ChaseBehaviour, ScatterBehaviour and a FrightenedBehaviour. The HAS-A relationship refers to the composition of the classes. Now it is possible to compose the Ghost class to in such a waye that each of the different types of ghosts can be composed of different implementations for each of the 3 modes of movement.
+The Ghost class has a ChaseBehaviour, ScatterBehaviour and a FrightenedBehaviour. The HAS-A relationship refers to the composition of the classes. Now it is possible to compose the Ghost class to in such a way that each of the different types of ghosts can be composed of different implementations for each of the 3 modes of movement.
 
 
 ### Chase Behaviour: Strategy Pattern
-The chase behaviour of the ghosts vary, and the implementation of each of the parts are removed into a seperate class. Hence, the algorithm to chase aggressively, ambush, patrol and random is placed in seperate classes. An interface (ChaseBehaviour) is created to allow for the composition between the Ghost class and the different implementations of the the Chase behaviour. 
+The chase behaviour of the ghosts varies, and the implementation of each of the parts are removed into a separate class. Hence, the algorithm to chase aggressively, ambush, patrol and random is placed in separate classes. An interface (ChaseBehaviour) is created to allow for the composition between the Ghost class and the different implementations of the  Chase behaviour. 
 
 The following diagram illustrates the composition and implementation of the Ghost class and the different implementations of the ChaseBahaviour:
 
@@ -51,7 +54,7 @@ The following diagram illustrates the composition and implementation of the Ghos
 
 
 ### Scatter Behaviour: Strategy Pattern
-The scatter behaviour of the ghosts vary, and the implementation of each of the parts are removed into a seperate class. Hence, the algorithm to scatter to the top-left, top-right, bottom-left and bottom right corners is placed in seperate classes. An interface (ScatterBehaviour) is created to allow for the composition between the Ghost class and the different implementations of the the Scatter behaviour. 
+The scatter behaviour of the ghosts varies, and the implementation of each of the parts are removed into a separate class. Hence, the algorithm to scatter to the top-left, top-right, bottom-left and bottom right corners is placed in separate classes. An interface (ScatterBehaviour) is created to allow for the composition between the Ghost class and the different implementations of the Scatter behaviour. 
 
 The following diagram illustrates the composition and implementation of the Ghost class and the different implementations of the ScatterBahaviour:
 
@@ -66,7 +69,7 @@ The following diagram illustrates the composition and implementation of the Ghos
 
 
 ### Frightened Behaviour: Strategy Pattern
-The frightened behaviour of the ghosts may does not vary, however the implementation of is still removed into a seperate class. Hence, the algorithm to wander around is placed in seperate class. An interface (FrightenedBehaviour) is created to allow for the composition between the Ghost class and the implementation of the the Wandering behaviour. 
+The frightened behaviour of the ghosts may does not vary, however the implementation of is still removed into a separate class. Hence, the algorithm to wander around is placed in separate class. An interface (FrightenedBehaviour) is created to allow for the composition between the Ghost class and the implementation of the Wandering behaviour. 
 
 The following diagram illustrates the composition and implementation of the Ghost class and the different implementations of the FrightenedBehaviour:
 
