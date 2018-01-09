@@ -24,3 +24,9 @@ S.O.L.I.D stands for:
 ### Interface Segregation Principle
 
 ### Dependency Inversion Principle
+
+## Loose Coupling
+* Always strive for loosely coupled designs between objects that interact with each other.
+* Loosely coupled objects can interact with each other, but still have very little knowledge and dependancies on each other.
+* Loosely coupled object-oriented design allows for flexible and reusable systems.
+* Loosely coupled minimize the interdependancy between objects.

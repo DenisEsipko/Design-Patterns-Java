@@ -1,7 +1,7 @@
 # Pac-Man Patterns - Ghost Movement (Strategy Pattern)
 
 ## Pac-Man Ghost Movement
-### Introduction
+### Overview
 Pac-Man is an arcade game that was first release in 1980. The player navigates Pac-Man through a maze and has to collect all the dots (Pac-Dots) in order to complete the stage. Pac-Man is being chased by four ghosts in the game whose main objective is to kill him. The four ghosts, Blinky, Pinky, Inky and Clyde, each has different behaviour depending on the mode of the ghosts. The ghosts change mode during game play from scattering to the corners of the maze, to chasing Pac-Man and also to being frightened when Pac-Man picks up a Power-Pellet.
 
 ![Pac-Man Ghosts](https://thepracticaldev.s3.amazonaws.com/i/ir34qzitet0r046j30yd.jpg)
