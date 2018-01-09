@@ -1,4 +1,8 @@
 # Command Pattern
+*Object Behavioral*
+
+## Intent
+*"Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations." ~ Gamma et al.*
 
 ## Structure
 ![command_pattern](https://raw.githubusercontent.com/Code2Bits/Design-Patterns-Java/master/Behavioral%20Patterns/Command/Images/command_pattern.png)
