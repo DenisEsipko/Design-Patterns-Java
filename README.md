@@ -1,5 +1,11 @@
 # Design Patterns (Java)
 
+## What is a Design Pattern
+*"Each pattern describes a problem which occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice" ~ Christopher Alexander*
+
+Design Patterns are general solutions for common Object-Oriented problems. The patterns comes from experience of developers who noticed the solution they have on these regular problems. Through Design Patterns, your software becomes more maintainable that are resilient to change.
+
+
 ## Behavioral Patterns
 * [Chain Of Responsibility Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Chain%20Of%20Responsibility) [:earth_africa:](http://en.wikipedia.org/wiki/Chain_of_responsibility_pattern)
 * [Command Pattern](https://github.com/Code2Bits/Design-Patterns-Java/tree/master/Behavioral%20Patterns/Command) [:earth_africa:](http://en.wikipedia.org/wiki/Command_pattern)
